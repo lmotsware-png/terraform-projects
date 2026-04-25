@@ -1,58 +1,52 @@
-# AWS Warm Standby Disaster Recovery Infrastructure
-
-## Project Overview
-This project demonstrates a production-grade AWS Warm Standby 
-Disaster Recovery architecture built entirely with Terraform (IaC).
-
-The infrastructure replicates a real-world scenario where a 
-financial/media company (SABC News) requires high availability 
-and disaster recovery across two AWS regions.
-
-## Architecture Diagram
-Main Region (Cape Town - af-south-1) → DR Region (Ireland - eu-west-1)
-
-## What This Infrastructure Builds
-
-### Main Region (Cape Town)
-- VPC with public and private subnets across 2 Availability Zones
-- Application Load Balancer with health checks
-- Auto Scaling Group (min 2, max 10 EC2 instances)
-- RDS MySQL with Multi-AZ enabled
-- S3 bucket with versioning and encryption
-
-### DR Region (Ireland) — Warm Standby
-- Identical architecture but scaled down
-- Auto Scaling Group (min 1, max 10 EC2 instances)
-- RDS Read Replica continuously synced from main region
-- S3 bucket with Cross Region Replication
-- Route 53 health checks with automatic DNS failover
-
-## Disaster Recovery Flow
-1. Route 53 monitors main region every 30 seconds
-2. If main region fails — DNS automatically switches to DR region
-3. Auto Scaling Group scales up in DR region
-4. RDS Read Replica promoted to primary
-5. S3 files already replicated — no data loss
-6. Recovery Time Objective (RTO): Minutes
-
-## Technologies Used
-- AWS (EC2, RDS, S3, Route 53, ALB, Auto Scaling, VPC)
-- Terraform (Infrastructure as Code)
-- GitHub (Version Control)
-
-## AWS Services Covered
-- EC2 with Auto Scaling Groups
-- Application Load Balancer
-- RDS MySQL with Multi-AZ and Cross Region Replication
-- S3 with Cross Region Replication
-- Route 53 with Failover Routing
-- VPC, Subnets, Security Groups, Internet Gateway
-- IAM Roles and Policies
-
 ## Author
-**Imotsware**
-- AWS Solutions Architect Associate (In Progress)
-- CCNA Certified
-- N6 Electrical Engineering
-- Former Network Technician — SANDF Tempe Military Base
-- Former Broadcast Technician — Sentech (SABC Transmission)
+**Lerato Motsware**
+📧 lmotsware@gmail.com
+🔗 LinkedIn: linkedin.com/in/lerato-motsware-83923017a
+🔗 GitHub: github.com/Imotsware-png
+
+---
+
+### Qualifications
+- CCNA — Cisco Certified Network Associate (Feb 2026)
+- National Diploma: Electrical Engineering (Light Current) 
+  — Walter Sisulu University (Nov 2021)
+- N3–N6 Electrical Engineering — Sedibeng College (2016)
+- Grade 12 — Edisoni Nesengani Secondary School (2012)
+
+---
+
+### Professional Experience
+
+**Network Infrastructure Engineer — SANDF Project**
+Feb 2024 – Jul 2025 | Tempe Military Base, Bloemfontein
+Contracted via Modiro Solutions (NEC XON) and Anchora (Reutech)
+- Maintained critical communication infrastructure across 13 sites
+- Configured Cisco routers, switches, VLANs, STP/RSTP
+- Fiber optic tracing, structured cabling, network room maintenance
+- L1/L2/L3 support resolving ITSM tickets for VoIP, PABX, data networks
+
+**Quality Assurance Engineer — Sentech SOC**
+Jun 2021 – Jan 2024 | Nationwide
+- Inspected nationwide DTT/DTH installations for compliance
+- Produced QA reports and technical documentation
+- Verified antenna polarization, satellite dish alignment
+
+**Technician Intern — Sentech SOC**
+Feb 2020 – Jan 2021
+- Assisted with FM/TV transmitters, satellite receivers, RF systems
+- Supported RF analysis, signal measurement, encryption and telemetry
+
+---
+
+### Currently
+- 🎯 Studying AWS Solutions Architect Associate (SAA-C03) — Exam in 2 weeks
+- ☁️ Building AWS infrastructure using Terraform (Infrastructure as Code)
+- 🚀 Transitioning from Network Engineering into Cloud Engineering and DevOps
+
+---
+
+### Technical Skills
+**Networking:** OSPF, EIGRP, RIP, VLANs, STP, VTP, TCP/IP, DHCP, DNS
+**Cloud & DevOps:** AWS (EC2, ALB, RDS, S3, Route53, VPC, IAM, ASG), Terraform
+**Telecom:** VoIP, PABX, Microwave, FM/TV, DTT/DTH, Satellite
+**Infrastructure:** Fiber, Structured Cabling, CCTV, UPS, Generators
