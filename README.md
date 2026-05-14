@@ -7,6 +7,8 @@
 ---
 
 ### Qualifications
+
+- AWS Solution Architectur Associate
 - CCNA — Cisco Certified Network Associate (Feb 2026)
 - National Diploma: Electrical Engineering (Light Current) 
   — Walter Sisulu University (Nov 2021)
@@ -17,7 +19,7 @@
 
 ### Professional Experience
 
-**Network Infrastructure Engineer — SANDF Project**
+**Network Infrastructure Technician— SANDF Project**
 Feb 2024 – Jul 2025 | Tempe Military Base, Bloemfontein
 Contracted via Modiro Solutions (NEC XON) and Anchora (Reutech)
 - Maintained critical communication infrastructure across 13 sites
@@ -38,12 +40,7 @@ Feb 2020 – Jan 2021
 
 ---
 
-### Currently
-- 🎯 Studying AWS Solutions Architect Associate (SAA-C03) — Exam in 2 weeks
-- ☁️ Building AWS infrastructure using Terraform (Infrastructure as Code)
-- 🚀 Transitioning from Network Engineering into Cloud Engineering and DevOps
 
----
 
 ### Technical Skills
 **Networking:** OSPF, EIGRP, RIP, VLANs, STP, VTP, TCP/IP, DHCP, DNS
