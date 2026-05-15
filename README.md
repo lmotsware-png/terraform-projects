@@ -4,7 +4,7 @@ Enterprise-grade disaster recovery architecture implementing warm standby failov
 
 [![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 
 ## Architecture Overview
 
@@ -294,9 +294,7 @@ Contributions welcome! Please:
 4. Push to branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
